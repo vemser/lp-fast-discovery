@@ -21,11 +21,19 @@ const config: Config = {
         'blue-bg': '#E9F2FF',
         'blue-dbc-bg': '#1E62FE',
       },
+      fontFamily: {
+        inter: ['Inter', 'sansoserif'],
+      },
       fontSize: {
         h1: '56px',
         h2: '48px',
         h3: '40px',
         h4: '32px',
+      },
+      fontWeight: {
+        'custom-500': '500',
+        'custom-600': '600',
+        'custom-700': '700',          
       },
     },
   },
