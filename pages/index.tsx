@@ -1,10 +1,7 @@
 
-<<<<<<< HEAD
 import DefaultTextDark from "@/components/atoms/default-text/DefaultTextDark";
 import DefaultTextLight from "@/components/atoms/default-text/DefaultTextLight";
-=======
-import DefaultBtn from "@/components/atoms/default-btn/DefaultBtn";
->>>>>>> main
+import DefaultTitle from "@/components/atoms/default-title/DefaultTitle";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ 
@@ -14,7 +11,8 @@ const inter = Inter({
 
 export default function Home() {
   return (
-   <>   
+   <> 
+   <DefaultTitle variant="tertiary">teste</DefaultTitle>  
    <DefaultTextDark text="Teste de estilização" />
    <DefaultTextLight text="Teste de estilização" />
    </>
