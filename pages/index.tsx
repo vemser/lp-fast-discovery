@@ -1,3 +1,4 @@
+import DefaultTextMenu from '@/components/atoms/default-text-menu/DefaultTextMenu';
 import { Inter } from 'next/font/google';
 import { ToastContainer } from 'react-toastify';
 
@@ -12,9 +13,11 @@ export default function Home() {
   return (
     <>
       <ToastContainer />
-      <div className={inter.className}>
+      <section className={inter.className}>
         <h1>Servidor cliente rodando!</h1>
-      </div>
+        <DefaultTextMenu>Nossa missão</DefaultTextMenu>
+      </section>
+      
     </>
   );
 }
