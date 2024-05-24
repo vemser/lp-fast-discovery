@@ -1,6 +1,5 @@
 
-import DefaultTextDark from "@/components/atoms/default-text/DefaultTextDark";
-import DefaultTextLight from "@/components/atoms/default-text/DefaultTextLight";
+import DefaultTextGeral from "@/components/atoms/default-text/DefaultTextGeral";
 import DefaultTitle from "@/components/atoms/default-title/DefaultTitle";
 import { Inter } from "next/font/google";
 
@@ -13,8 +12,9 @@ export default function Home() {
   return (
    <> 
    <DefaultTitle variant="tertiary">teste</DefaultTitle>  
-   <DefaultTextDark text="Teste de estilização" />
-   <DefaultTextLight text="Teste de estilização" />
+   <DefaultTextGeral variant="dark">estilo dark</DefaultTextGeral>
+   
+   
    </>
   );
 }
