@@ -1,21 +1,50 @@
+import { EnvelopeSimple, Info } from '@phosphor-icons/react';
 import { ButtonHTMLAttributes } from 'react';
+import { Id, toast } from 'react-toastify';
 
 type EmailBtnProps = ButtonHTMLAttributes<HTMLButtonElement> & {
-  children: React.ReactNode;
-  email?: string;
 };
 
 export function EmailBtn({
-  children,
-  email = 'contato@dbccompany.com.br',
   ...rest
 }: EmailBtnProps) {
-  function handleCopyEmail() {
-    const emailValue = email;
+  async function handleCopyEmail() {
+    const emailValue = process.env.EMAIL_CLIPBOARD ?? 'contato@dbccompany.com.br';
     navigator.clipboard.writeText(emailValue);
 
-    //continuar para disparar alerta ao copiar e-mail
-    console.log(navigator.clipboard.readText());
+    const emailInClipboard = await navigator.clipboard.readText();
+    const isEmailCopyed = emailValue === emailInClipboard;
+
+    if (isEmailCopyed) {
+      const toastId = toast(<ToastContainer />, {
+        hideProgressBar: true,
+        style: { background: '#004BF5',  },
+        theme: 'colored',
+        closeButton: () => <ToastButton toastId={toastId} />,
+      });
+    }
+  }
+
+  function ToastContainer() {
+    return (
+      <div className="flex items-center gap-4 text-white">
+        <Info size={32} />
+        <span className="text-sm">
+          Email copiado para a área de transferência.
+        </span>
+      </div>
+    );
+  }
+
+  function ToastButton({ toastId }: { toastId: Id }) {
+    return (
+      <button
+        className="text-white pr-4"
+        onClick={() => toast.dismiss(toastId)}
+      >
+        Fechar
+      </button>
+    );
   }
 
   return (
@@ -29,7 +58,7 @@ export function EmailBtn({
       onClick={handleCopyEmail}
       {...rest}
     >
-      {children}
+      <EnvelopeSimple size={48}/>
     </button>
   );
 }
