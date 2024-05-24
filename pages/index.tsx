@@ -1,6 +1,10 @@
 
+<<<<<<< HEAD
 import DefaultTextDark from "@/components/atoms/default-text/DefaultTextDark";
 import DefaultTextLight from "@/components/atoms/default-text/DefaultTextLight";
+=======
+import DefaultBtn from "@/components/atoms/default-btn/DefaultBtn";
+>>>>>>> main
 import { Inter } from "next/font/google";
 
 const inter = Inter({ 
