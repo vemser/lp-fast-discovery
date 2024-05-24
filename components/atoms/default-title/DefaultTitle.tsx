@@ -1,8 +1,12 @@
 
-export default function DefaultBtn() {
+interface TextTitle {
+    title: string;
+}
+
+export default function DefaultTitle({title}: TextTitle) {
     return(
         <>
-        Título padrão
+       <h1></h1>
         </>
     )
 }
