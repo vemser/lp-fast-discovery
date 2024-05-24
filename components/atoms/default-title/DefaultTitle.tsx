@@ -6,7 +6,7 @@ interface TextTitle {
 export default function DefaultTitle({title}: TextTitle) {
     return(
         <>
-       <h1></h1>
+       <h1>teste</h1>
         </>
     )
 }
