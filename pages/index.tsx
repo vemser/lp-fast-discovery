@@ -1,5 +1,8 @@
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
 import { Inter } from "next/font/google";
 
 const inter = Inter({ 
@@ -9,9 +12,14 @@ const inter = Inter({
 
 export default function Home() {
   return (
+<<<<<<< HEAD
    <> 
    
    
+=======
+   <>   
+   <h1>Start</h1>
+>>>>>>> main
    </>
   );
 }
