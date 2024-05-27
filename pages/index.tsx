@@ -1,4 +1,5 @@
 import DefaultTextMenu from '@/components/atoms/default-text-menu/DefaultTextMenu';
+import CardsLp from '@/components/molecules/card-lp/CardsLp';
 import Header from '@/components/organisms/header/Header';
 import { Inter } from 'next/font/google';
 import { ToastContainer } from 'react-toastify';
@@ -16,7 +17,8 @@ export default function Home() {
       <ToastContainer />
       <section className={inter.className}>
         <Header/>
-        <h1>Servidor cliente rodando!</h1>        
+        <h1>Servidor cliente rodando!</h1>     
+       <CardsLp icon="/Iconhug.png" alt="Interatividade" title="Interatividade Elevada">Aqui vai o texto do card</CardsLp>
       </section>
       
     </>
