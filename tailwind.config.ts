@@ -20,6 +20,8 @@ const config: Config = {
         white: '#FFFFFF',
         'blue-bg': '#E9F2FF',
         'blue-dbc-bg': '#1E62FE',
+        'modal-overlay': 'rgb(1,6,26)',
+        'btn-danger': '#BD2730',
       },
       fontFamily: {
         inter: ['Inter', 'sansoserif'],
