@@ -15,7 +15,7 @@ export default function Home() {
       <ToastContainer />
       <section className={inter.className}>
         <h1>Servidor cliente rodando!</h1>
-        <DefaultTextMenu>Nossa missão</DefaultTextMenu>
+        <DefaultTextMenu href="#">Menu BarNav</DefaultTextMenu>
       </section>
       
     </>
