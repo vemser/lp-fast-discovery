@@ -16,9 +16,8 @@ export default function Home() {
     <>
       <ToastContainer />
       <section className={inter.className}>
-        <Header/>
-        <h1>Servidor cliente rodando!</h1>     
-       <CardsLp icon="/Iconhug.png" alt="Interatividade" title="Interatividade Elevada">Aqui vai o texto do card</CardsLp>
+        <Header/>            
+       <CardsLp icon="/Iconhug.png" alt="Interatividade" title="Interatividade Elevada">Uma das partes mais importantes do nosso processo é fomentar os debates e melhorias.</CardsLp>
       </section>
       
     </>
