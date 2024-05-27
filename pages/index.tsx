@@ -1,4 +1,5 @@
 import DefaultTextMenu from '@/components/atoms/default-text-menu/DefaultTextMenu';
+import { FaqSection } from '@/components/organisms/faq-section/FaqSection';
 import Header from '@/components/organisms/header/Header';
 import { Inter } from 'next/font/google';
 import { ToastContainer } from 'react-toastify';
@@ -16,7 +17,7 @@ export default function Home() {
       <ToastContainer />
       <section className={inter.className}>
         <Header/>
-        <h1>Servidor cliente rodando!</h1>        
+        <FaqSection/>
       </section>
       
     </>
