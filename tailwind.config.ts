@@ -22,6 +22,8 @@ const config: Config = {
         'blue-dbc-bg': '#1E62FE',
         'modal-overlay': 'rgb(1,6,26)',
         'btn-danger': '#BD2730',
+        'hero-img-gradient': 'linear-gradient(65.81deg, #01061A -8.06%, rgba(4, 12, 44, 0.07) 98.01%)',
+
       },
       fontFamily: {
         inter: ['Inter', 'sansoserif'],

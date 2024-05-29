@@ -1,9 +1,10 @@
-import DefaultTextMenu from '@/components/atoms/default-text-menu/DefaultTextMenu';
-import CardsLp from '@/components/molecules/card-lp/CardsLp';
+import { EmailBtn } from '@/components/atoms/email-btn/EmailBtn';
+import { BigHeroSection } from '@/components/organisms/big-hero-section/BigHeroSection';
 import { FaqSection } from '@/components/organisms/faq-section/FaqSection';
-import Header from '@/components/organisms/header/Header';
 import { Inter } from 'next/font/google';
 import { ToastContainer } from 'react-toastify';
+import Head from 'next/head';
+import Header from '@/components/organisms/header/Header';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -15,15 +16,16 @@ import 'react-toastify/dist/ReactToastify.min.css';
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>DBC | Fast Discovery</title>
+      </Head>
       <ToastContainer />
-      <section className={inter.className}>
-
-        <Header/>            
-       <CardsLp icon="/Iconhug.png" alt="Interatividade" title="Interatividade Elevada">Uma das partes mais importantes do nosso processo é fomentar os debates e melhorias.</CardsLp>
-        <Header/>
-        <FaqSection/>
+      <section className={`${inter.className} flex flex-col`}>
+        <EmailBtn className="fixed right-6 bottom-4 md:right-14 md:bottom-14 z-10" />
+        <Header />
+        <BigHeroSection/>
+        <FaqSection />
       </section>
-      </>
-      
+    </>
   );
 }
