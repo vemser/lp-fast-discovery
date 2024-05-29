@@ -1,6 +1,5 @@
-import DefaultTextMenu from '@/components/atoms/default-text-menu/DefaultTextMenu';
-import CardsLp from '@/components/molecules/card-lp/CardsLp';
 import { FaqSection } from '@/components/organisms/faq-section/FaqSection';
+import Footer from '@/components/organisms/footer/Footer';
 import Header from '@/components/organisms/header/Header';
 import { Inter } from 'next/font/google';
 import { ToastContainer } from 'react-toastify';
@@ -17,11 +16,9 @@ export default function Home() {
     <>
       <ToastContainer />
       <section className={inter.className}>
-
-        <Header/>            
-       <CardsLp icon="/Iconhug.png" alt="Interatividade" title="Interatividade Elevada">Uma das partes mais importantes do nosso processo é fomentar os debates e melhorias.</CardsLp>
-        <Header/>
+        <Header/>        
         <FaqSection/>
+        <Footer/>
       </section>
       </>
       
