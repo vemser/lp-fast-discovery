@@ -28,8 +28,8 @@ export default function Footer() {
       
       <div className="w-full max-w-screen-2xl border-t border-white mx-auto pt-42">
     <div className="flex justify-between w-full">
-        <span className="text-left">&copy; {getCurrentYear()} Digital Business Company. Todos os direitos reservados. Diagramação e programação pelo programa Vem Ser.</span>
-        <span className="text-right">Texto à direita</span>
+        <span className="text-left text-sm">&copy; {getCurrentYear()} Digital Business Company. Todos os direitos reservados. Diagramação e programação pelo programa Vem Ser.</span>
+        <span className="text-right text-sm"><a href="https://www.dbccompany.com.br/politica-de-privacidade/" target="_blank">Leia sobre nossa política de privacidade</a></span>
     </div>
 </div>
     
