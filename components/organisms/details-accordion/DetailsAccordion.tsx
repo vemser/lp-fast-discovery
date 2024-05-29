@@ -34,10 +34,10 @@ export function DetailsAccordion() {
     <Accordion
       type="single"
       collapsible
-      className='flex flex-col gap-6'
+      className='flex flex-col gap-6 sm:items-center'
     >
       {faqData.map((item, i) => (
-        <AccordionItem value={`item-${i}`} key={i}>
+        <AccordionItem className='max-w-[700px] w-full' value={`item-${i}`} key={i}>
         <AccordionTrigger className='focus:outline-brand-darker'>{item.title}</AccordionTrigger>
         <AccordionContent>
           {item.description}
