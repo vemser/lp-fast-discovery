@@ -1,34 +1,64 @@
-import DefaultBtn from '@/components/atoms/default-btn/DefaultBtn';
-
 import {
-    Sheet,
-    SheetClose,
-    SheetContent,
-    SheetDescription,
-    SheetFooter,
-    SheetHeader,
-    SheetTitle,
-    SheetTrigger,
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetFooter,
+  SheetHeader,
+  SheetTrigger,
 } from '../../atoms/drawer/Drawer';
 import { List } from '@phosphor-icons/react';
+import Link from 'next/link';
 
 export function HeaderDrawer() {
   return (
     <Sheet>
       <SheetTrigger>
-        <List size={28} weight='bold' color='#FFF'/>
+        <List
+          size={28}
+          weight="bold"
+          color="#FFF"
+        />
       </SheetTrigger>
-      <SheetContent>
+      <SheetContent className="bg-brand-darker text-white">
         <SheetHeader>
-          <SheetTitle>Are you absolutely sure?</SheetTitle>
-          <SheetDescription>This action cannot be undone.</SheetDescription>
+          <SheetDescription>
+            <div className="mt-12 flex flex-col gap-4">
+              <div className="pb-4 border-b border-gray-light/25 text-right w-full">
+                <Link
+                  href="#como-funciona"
+                  className="font-medium p-2"
+                >
+                  Como funciona
+                </Link>
+              </div>
+              <div className="pb-4 border-b border-gray-light/25 text-right">
+                <Link
+                  href="#nossa-jornada"
+                  className="font-medium p-2"
+                >
+                  Nossa jornada
+                </Link>
+              </div>
+              <div className="pb-4 border-b border-gray-light/25 text-right">
+                <Link
+                  href="#beneficios"
+                  className="font-medium p-2"
+                >
+                  Benefícios
+                </Link>
+              </div>
+              <div className="pb-4 border-b border-gray-light/25 text-right">
+                <Link
+                  href="#faq"
+                  className="font-medium p-2"
+                >
+                  FAQ
+                </Link>
+              </div>
+            </div>
+          </SheetDescription>
         </SheetHeader>
-        <SheetFooter>
-          <DefaultBtn>Submit</DefaultBtn>
-          <SheetClose>
-            <DefaultBtn variant="secondary">Cancel</DefaultBtn>
-          </SheetClose>
-        </SheetFooter>
+        <SheetFooter></SheetFooter>
       </SheetContent>
     </Sheet>
   );

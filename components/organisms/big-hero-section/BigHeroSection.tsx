@@ -30,14 +30,14 @@ export function BigHeroSection() {
         )}
       </DefaultBtn>
       <div
-        className="absolute flex flex-col gap-8 left-6 lg:left-32 justify-start max-w-[500px] mb-14 sm:items-center sm:max-w-full sm:text-center
+        className="absolute flex flex-col gap-8 pr-6 left-6 lg:left-32 justify-start max-w-[500px] mb-14 sm:items-center sm:max-w-full sm:text-center
            lg:text-left"
           style={{ alignItems: 'start' }}
       >
         <h1 className="text-h1 text-white font-medium leading-[68px] max-w-2 text-left">
           Fast Product Discovery
         </h1>
-        <p className="max-w-[320px] text-white text-left">
+        <p className="max-w-[300px] text-white text-left">
           A ferramenta mais rápida e eficaz para validar seu produto digital no
           formato presencial ou remoto.
         </p>

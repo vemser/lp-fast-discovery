@@ -8,7 +8,7 @@ export default function BarNav() {
     <>
       <nav className="flex justify-between item-center bg-brand-darker px-7 py-4 lg:px-32">
         <div className="flex items-center">
-          <Link href="/#">
+          <Link href="#">
           <Image
             src="/logo.svg"
             alt="DBC Company"
@@ -18,10 +18,10 @@ export default function BarNav() {
           </Link>
         </div>
         <div className="ml-auto hidden md:flex py-3 space-x-4">
-          <DefaultTextMenu href="#">Como funciona</DefaultTextMenu>
-          <DefaultTextMenu href="#">Nossa jornada</DefaultTextMenu>
-          <DefaultTextMenu href="#">Benefícios</DefaultTextMenu>
-          <DefaultTextMenu href="#">FAQ</DefaultTextMenu>
+          <DefaultTextMenu href="#como-funciona">Como funciona</DefaultTextMenu>
+          <DefaultTextMenu href="#nossa-jornada">Nossa jornada</DefaultTextMenu>
+          <DefaultTextMenu href="#beneficios">Benefícios</DefaultTextMenu>
+          <DefaultTextMenu href="#faq">FAQ</DefaultTextMenu>
         </div>
         <div className='md:hidden'>
           <HeaderDrawer/>
