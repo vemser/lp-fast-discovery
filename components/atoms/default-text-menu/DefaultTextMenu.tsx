@@ -18,8 +18,8 @@ export default function DefaultTextMenu({
           className="
       inline-block
       text-white text-lg font-medium px-1.5 py-1
-      hover:border hover:border-white hover:rounded-2xl
-      active:text-gray-300 hover:border-gray-300 hover:rounded-2xl
+      hover:outline hover:outline-white hover:outline-rounded-2xl
+      active:text-gray-300  hover:rounded-2xl
       disabled:text-gray-400 disabled:cursor-not-allowed      
       transition-all duration-300
       "

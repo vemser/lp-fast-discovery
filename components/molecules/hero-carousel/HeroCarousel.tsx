@@ -5,38 +5,61 @@ import {
   CarouselItem,
 } from '../../atoms/carousel/Carousel';
 
-import AutoPlay from "embla-carousel-autoplay"
+import AutoPlay from 'embla-carousel-autoplay';
+import Fade from 'embla-carousel-fade';
 
-import Img1 from '../../atoms/assets/imgs/bg_anima_um.png'
-import Img2 from '../../atoms/assets/imgs/bg_anima_dois.png'
+import ImgPostIt from '../../atoms/assets/imgs/bg_anima_dois.png';
+import imgPeople from '../../atoms/assets/imgs/bg_anima_um.png';
 
+interface HeroCarouselProps {
+  isStopAnimate: boolean;
+}
 
-export function HeroCarousel() {
+export function HeroCarousel({ isStopAnimate }: HeroCarouselProps) {
+  function defineCarouselConfig() {
+    return isStopAnimate
+      ? []
+      : [
+          AutoPlay({
+            delay: 5000,
+          }),
+          Fade(),
+        ];
+  }
+
   return (
-    <Carousel className='w-full outline-1 outline-red-400 -z-20' plugins={[
-      AutoPlay({
-        delay: 4000,
-      }),
-    ]}>
+    <Carousel
+      className="relative -z-20 overflow-hidden max-h-full"
+      plugins={defineCarouselConfig()}
+    >
       <CarouselContent>
-        <CarouselItem >
+        <CarouselItem className="h-[100vh] w-[100vw]">
+          <div
+            className="absolute top-0 left-0 w-full h-full"
+            style={{
+              background:
+                'linear-gradient(65.81deg, #01061A -8.06%, rgba(4, 12, 44, 0.07) 98.01%)',
+            }}
+          ></div>
           <Image
-            src={Img1}
-            className='bg-hero-img-gradient'
-            alt='.'
-        />
+            src={ImgPostIt}
+            alt="Pessoa segurando a escrita da caneta azul no papel branco"
+            className="object-cover h-full"
+          />
         </CarouselItem>
-        <CarouselItem>
-        <Image
-            src={Img2}
-            alt='.'
-        />
-        </CarouselItem>
-        <CarouselItem>
-        <Image
-            src={Img1}
-            alt='.'
-        />
+        <CarouselItem className="h-[100vh] w-[100vw]">
+          <div
+            className="absolute top-0 w-full h-full"
+            style={{
+              background:
+                'linear-gradient(65.81deg, #01061A -8.06%, rgba(4, 12, 44, 0.07) 98.01%)',
+            }}
+          ></div>
+          <Image
+            src={imgPeople}
+            alt="Dois homens apresentando um poster com post-its"
+            className="object-cover h-full"
+          />
         </CarouselItem>
       </CarouselContent>
     </Carousel>

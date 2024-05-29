@@ -51,13 +51,13 @@ export function EmailBtn({ className, ...rest }: EmailBtnProps) {
   return (
     <button
       className={cn(
-        'w-[80px] h-[80px] rounded-full flex items-center justify-center transition-all duration-300 bg-brand-main text-white hover:bg-brand-dark active:bg-brand-darker disabled:bg-gray-dark disabled:cursor-not-allowed focus:outline-2 focus:outline-brand-dark',
+        'w-[50px] h-[50px] md:w-[80px] md:h-[80px] rounded-full flex items-center justify-center transition-all duration-300 bg-brand-main text-white hover:bg-brand-dark active:bg-brand-darker disabled:bg-gray-dark disabled:cursor-not-allowed focus:outline-2 focus:outline-brand-dark',
         className
       )}
       onClick={handleCopyEmail}
       {...rest}
     >
-      <EnvelopeSimple size={48} />
+      <EnvelopeSimple className='text-3xl md:text-5xl' />
     </button>
   );
 }

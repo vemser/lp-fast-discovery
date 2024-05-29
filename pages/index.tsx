@@ -1,10 +1,9 @@
-import DefaultTextMenu from '@/components/atoms/default-text-menu/DefaultTextMenu';
 import { EmailBtn } from '@/components/atoms/email-btn/EmailBtn';
 import { BigHeroSection } from '@/components/organisms/big-hero-section/BigHeroSection';
 import { FaqSection } from '@/components/organisms/faq-section/FaqSection';
-import Header from '@/components/organisms/header/Header';
 import { Inter } from 'next/font/google';
 import { ToastContainer } from 'react-toastify';
+import Header from '@/components/organisms/header/Header';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -17,10 +16,10 @@ export default function Home() {
   return (
     <>
       <ToastContainer />
-      <section className={inter.className}>
-        <EmailBtn className="fixed right-14 bottom-14 z-10" />
+      <section className={`${inter.className} flex flex-col`}>
+        <EmailBtn className="fixed right-6 bottom-4 md:right-14 md:bottom-14 z-10" />
         <Header />
-        <BigHeroSection />
+        <BigHeroSection/>
         <FaqSection />
       </section>
     </>

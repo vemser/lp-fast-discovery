@@ -5,6 +5,8 @@ import useEmblaCarousel, {
   type UseEmblaCarouselType,
 } from "embla-carousel-react"
 
+import Fade from 'embla-carousel-fade'
+
 import { cn } from "../../../utils/tailwindMerge"
 
 type CarouselApi = UseEmblaCarouselType[1]
