@@ -12,6 +12,7 @@ const inter = Inter({
 });
 
 import 'react-toastify/dist/ReactToastify.min.css';
+import { FastProccessSection } from '@/components/organisms/fast-proccess-section/FastProccessSection';
 
 export default function Home() {
   return (
@@ -24,7 +25,8 @@ export default function Home() {
         <EmailBtn className="fixed right-6 bottom-4 md:right-14 md:bottom-14 z-10" />
         <Header />
         <BigHeroSection/>
-        <FaqSection />
+        <FastProccessSection />
+        <FaqSection/>
       </section>
     </>
   );

@@ -12,7 +12,7 @@ export function VideoModal() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <DefaultBtn className='w-full md:w-fit'>
+        <DefaultBtn className='w-full lg:w-fit'>
           Ver vídeo
         </DefaultBtn>
       </DialogTrigger>
