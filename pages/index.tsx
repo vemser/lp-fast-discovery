@@ -1,20 +1,21 @@
-import { EmailBtn } from '@/components/atoms/email-btn/EmailBtn';
-import { BigHeroSection } from '@/components/organisms/big-hero-section/BigHeroSection';
-import { FaqSection } from '@/components/organisms/faq-section/FaqSection';
-import { Inter } from 'next/font/google';
-import { ToastContainer } from 'react-toastify';
-import Head from 'next/head';
-import Header from '@/components/organisms/header/Header';
-import Footer from '@/components/organisms/footer/Footer';
+import { EmailBtn } from "@/components/atoms/email-btn/EmailBtn";
+import { BigHeroSection } from "@/components/organisms/big-hero-section/BigHeroSection";
+import { FaqSection } from "@/components/organisms/faq-section/FaqSection";
+import { Inter } from "next/font/google";
+import { ToastContainer } from "react-toastify";
+import Head from "next/head";
+import Header from "@/components/organisms/header/Header";
+import Footer from "@/components/organisms/footer/Footer";
 
 const inter = Inter({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
-import 'react-toastify/dist/ReactToastify.min.css';
-import { FastProccessSection } from '@/components/organisms/fast-proccess-section/FastProccessSection';
-import { AgileJourneySection } from '@/components/organisms/agile-journey-section/AgileJourneySection';
+import "react-toastify/dist/ReactToastify.min.css";
+import { FastProccessSection } from "@/components/organisms/fast-proccess-section/FastProccessSection";
+import { AgileJourneySection } from "@/components/organisms/agile-journey-section/AgileJourneySection";
+import { BenefitsSection } from "@/components/organisms/benefits-section/BenefitsSection";
 
 export default function Home() {
   return (
@@ -24,13 +25,14 @@ export default function Home() {
       </Head>
       <ToastContainer />
       <section className={`${inter.className} flex flex-col`}>
-        <EmailBtn className="fixed right-6 bottom-4 md:right-14 md:bottom-14 z-10" />
+        <EmailBtn className="fixed bottom-4 right-6 z-10 md:bottom-14 md:right-14" />
         <Header />
-        <BigHeroSection/>
+        <BigHeroSection />
         <FastProccessSection />
         <AgileJourneySection />
-        <FaqSection/>
-        <Footer/>
+        <BenefitsSection />
+        <FaqSection />
+        <Footer />
       </section>
     </>
   );
