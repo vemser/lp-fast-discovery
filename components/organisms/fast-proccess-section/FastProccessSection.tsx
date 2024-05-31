@@ -7,6 +7,7 @@ import peoplePresentingDesktopImg from '../../atoms/assets/imgs/people-presentin
 import peoplePresentingMobileImg from '../../atoms/assets/imgs/people-presenting-mobile.jpg';
 
 import styles from './textAnimation.module.css'
+import { VideoModal } from '../video-modal/VideoModal';
 
 export function FastProccessSection() {
   const [isStopAnimateText, setIsStopAnimateText] = useState(false);
@@ -53,12 +54,14 @@ export function FastProccessSection() {
             )}
           </DefaultBtn>
 
-          <p className="text-brand-darker text-base max-w-[500px]">
+          <p className="text-brand-darker text-base max-w-[480px]">
             Nossa metodologia ágil acelera o desenvolvimento de produtos,
             priorizando interação com usuários para validar ideias rapidamente.
             Reduzindo o tempo entre concepção e lançamento, garante alinhamento
             com as necessidades dos usuários e inovação ágil.
           </p>
+
+          <VideoModal/>
         </div>
 
         <div

@@ -1,11 +1,12 @@
 import DefaultBtn from '@/components/atoms/default-btn/DefaultBtn';
-import { VideoModal } from '../video-modal/VideoModal';
 import { PauseCircle, PlayCircle } from '@phosphor-icons/react';
 import { HeroCarousel } from '@/components/molecules/hero-carousel/HeroCarousel';
 import { useState } from 'react';
+import { useRouter } from 'next/router';
 
 export function BigHeroSection() {
   const [isStopAnimateCarousel, setIsStopAnimateCarousel] = useState(false);
+  const router = useRouter()
 
   return (
     <section className="flex items-center h-[90dvh] relative">
@@ -32,7 +33,7 @@ export function BigHeroSection() {
       <div
         className="absolute flex flex-col gap-8 pr-6 left-6 lg:left-32 justify-start max-w-[500px] mb-14 sm:items-center sm:max-w-full sm:text-center
            lg:text-left"
-          style={{ alignItems: 'start' }}
+        style={{ alignItems: 'start' }}
       >
         <h1 className="text-h1 text-white font-medium leading-[68px] max-w-2 text-left">
           Fast Product Discovery
@@ -42,7 +43,9 @@ export function BigHeroSection() {
           formato presencial ou remoto.
         </p>
         <div className="mt-3 w-full">
-          <VideoModal/>
+          <DefaultBtn onClick={() => router.push('#como-funciona')}>
+            Saiba mais
+          </DefaultBtn>
         </div>
       </div>
 
