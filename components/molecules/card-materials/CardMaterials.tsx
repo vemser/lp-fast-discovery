@@ -1,7 +1,26 @@
+import classNames from 'classnames';
 
-export default function CardMaterials() {
+interface Cardprops {
+    children: React.ReactNode;
+    variant: 'blueLight' | 'blueDark' | 'imgBg';
+    imgUrl?: string;
+}
+
+
+export default function CardMaterials({ children, variant, imgUrl }: Cardprops) {
     return(
         <>
+        <div className={classNames(
+            'w-[408px] p-4 rounded-lg shadow-lg',
+            {
+                'bg-blue-500': variant === 'blueLight',
+                'bg-blue-200': variant === 'blueDark',
+                'bg-cover bgpcenter': variant === 'imgBg',
+            },
+            imgUrl && variant === 'imgBg' ? `bg-[url('$(imgUrl'))]` : ''
+        )}>
+            {children}
+        </div>
         
         </>
     );
