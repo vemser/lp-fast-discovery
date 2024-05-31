@@ -9,11 +9,12 @@ import Footer from '@/components/organisms/footer/Footer';
 
 const inter = Inter({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
+  weight: ['300', '400', '500', '600', '700'],
 });
 
 import 'react-toastify/dist/ReactToastify.min.css';
 import { FastProccessSection } from '@/components/organisms/fast-proccess-section/FastProccessSection';
+import { AgileJourneySection } from '@/components/organisms/agile-journey-section/AgileJourneySection';
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
         <Header />
         <BigHeroSection/>
         <FastProccessSection />
+        <AgileJourneySection />
         <FaqSection/>
         <Footer/>
       </section>

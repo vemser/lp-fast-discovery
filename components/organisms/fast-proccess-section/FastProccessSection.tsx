@@ -17,7 +17,7 @@ export function FastProccessSection() {
       className="flex w-full flex-1 h-fit"
       id="como-funciona"
     >
-      <div className="flex-col flex gap-8 lg:gap-24 items-center h-[100dvh] w-full lg:flex-row lg:justify-between lg:pl-32">
+      <div className="flex-col flex gap-8 lg:gap-24 items-center min-h-[100dvh] w-full lg:flex-row lg:justify-between lg:pl-32">
         <div
           className="flex flex-1 flex-col gap-6 p-6 lg:p-0 justify-center items-start max-w-[500px] py-12 lg:mt-0 lg:mb-14  sm:max-w-full 
           lg:items-start lg:text-left
