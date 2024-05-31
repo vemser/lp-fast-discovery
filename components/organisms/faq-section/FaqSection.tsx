@@ -2,7 +2,7 @@ import { DetailsAccordion } from '../details-accordion/DetailsAccordion';
 
 export function FaqSection() {
   return (
-    <section className="flex h-[90dvh] bg-blue-bg ">
+    <section className="flex min-h-[80dvh] bg-blue-bg" id='faq'>
       <div
         className="flex flex-col justify-center gap-20 my-[15%] h-[100%] w-full px-6
         lg:flex-row

@@ -12,8 +12,8 @@ export function VideoModal() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <DefaultBtn>
-        Ver vídeo
+        <DefaultBtn className='w-full lg:w-fit'>
+          Ver vídeo
         </DefaultBtn>
       </DialogTrigger>
       <DialogContent className='bg-white max-w-[870px]'>
