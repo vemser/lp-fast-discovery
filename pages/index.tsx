@@ -15,6 +15,7 @@ const inter = Inter({
 
 import 'react-toastify/dist/ReactToastify.min.css';
 import { FastProccessSection } from '@/components/organisms/fast-proccess-section/FastProccessSection';
+import MoreMaterialsSection from '@/components/organisms/more-materials-section/MoreMaterialsSection';
 
 
 export default function Home() {
@@ -30,7 +31,7 @@ export default function Home() {
         <BigHeroSection/>        
         <FastProccessSection />
         <FaqSection/> 
-               
+       <MoreMaterialsSection/>        
         <Footer/>
       </section>
     </>

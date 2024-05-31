@@ -2,6 +2,7 @@ import classNames from "classnames";
 
 interface Cardprops {
   children: React.ReactNode;
+  text: string;
   variant: "blueLight" | "blueDark" | "imgBg";
   imgUrl?: string;
 }
@@ -10,6 +11,7 @@ export default function CardMaterials({
   children,
   variant,
   imgUrl,
+  text,
 }: Cardprops) {
   return (
     <>
@@ -17,8 +19,8 @@ export default function CardMaterials({
         className={classNames(
           "w-[408px] p-4 rounded-lg shadow-lg",
           {
-            "bg-blue-500": variant === "blueLight",
-            "bg-blue-200": variant === "blueDark",
+            "bg-brand-main": variant === "blueLight",
+            "bg-brand-dark": variant === "blueDark",
             "bg-cover bgpcenter": variant === "imgBg",
           },
           imgUrl && variant === "imgBg" ? `bg-[url('$(imgUrl'))]` : ""
@@ -29,6 +31,7 @@ export default function CardMaterials({
       <h2 className="text-4xl font-medium text-white">
             {children}
         </h2>
+        <p className="text-white">{text}</p>
       </div>
     </>
   );
