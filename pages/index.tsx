@@ -7,6 +7,7 @@ import Head from 'next/head';
 import Header from '@/components/organisms/header/Header';
 import Footer from '@/components/organisms/footer/Footer';
 
+
 const inter = Inter({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
@@ -14,6 +15,7 @@ const inter = Inter({
 
 import 'react-toastify/dist/ReactToastify.min.css';
 import { FastProccessSection } from '@/components/organisms/fast-proccess-section/FastProccessSection';
+
 
 export default function Home() {
   return (
@@ -25,9 +27,10 @@ export default function Home() {
       <section className={`${inter.className} flex flex-col`}>
         <EmailBtn className="fixed right-6 bottom-4 md:right-14 md:bottom-14 z-10" />
         <Header />
-        <BigHeroSection/>
+        <BigHeroSection/>        
         <FastProccessSection />
-        <FaqSection/>
+        <FaqSection/> 
+               
         <Footer/>
       </section>
     </>
