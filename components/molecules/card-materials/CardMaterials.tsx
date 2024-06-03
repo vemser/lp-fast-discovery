@@ -17,7 +17,7 @@ export default function CardMaterials({
     <>
       <div
         className={classNames(
-          "w-[408px] p-4 rounded-lg shadow-lg",
+          "w-full p-4 rounded-lg shadow-lg",
           {
             "bg-brand-main": variant === "blueLight",
             "bg-brand-dark": variant === "blueDark",
