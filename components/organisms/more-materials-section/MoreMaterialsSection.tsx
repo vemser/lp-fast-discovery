@@ -1,46 +1,31 @@
+"use client"
+
+import DefaultTitle from "@/components/atoms/default-title/DefaultTitle";
+import DefaultTextGeral from "@/components/atoms/default-text/DefaultTextGeral";
 import CardMaterials from "@/components/molecules/card-materials/CardMaterials";
+//import Image from "next/image";
 
 export default function MoreMaterialsSection() {
-    return (
-        <>
-            <div className="min-h-screen bg-brand-darker p-8">
-                <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 w-full h-full">
-                    <div className="lg:col-span-1">
-                        <h1 className="text-4xl">Teste</h1>
-                    </div>
-                    <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-                        <CardMaterials variant="blueLight" text="Este é um exemplo de card com fundo azul claro.">
-                            Título do card azul Claro
-                        </CardMaterials>
-                        <CardMaterials variant="blueDark" text="Este é um exemplo de card com fundo azul escuro.">
-                            Título do card azul Escuro
-                        </CardMaterials>
-                        <CardMaterials 
-                            variant="imgBg"
-                            imgUrl="https://via.placeholder.com/408x200"
-                            text="Este é um exemplo de card com uma imagem de fundo."
-                        >
-                            Título do Card com Imagem
-                        </CardMaterials>
-                        <CardMaterials variant="blueLight" text="Outro exemplo de card com fundo azul claro.">
-                            Outro Título do card azul Claro
-                        </CardMaterials>
-                        <CardMaterials variant="blueDark" text="Outro exemplo de card com fundo azul escuro.">
-                            Outro Título do card azul Escuro
-                        </CardMaterials>
-                        <CardMaterials 
-                            variant="imgBg"
-                            imgUrl="https://via.placeholder.com/408x200"
-                            text="Outro exemplo de card com uma imagem de fundo."
-                        >
-                            Outro Título do Card com Imagem
-                        </CardMaterials>
-                        <CardMaterials variant="blueLight" text="Mais um exemplo de card com fundo azul claro.">
-                            Mais um Título do card azul Claro
-                        </CardMaterials>
-                    </div>
-                </div>
+  return (
+    <>
+      <div className="min-h-screen bg-brand-darker p-4 sm:p-8 md:p-12 lg:p-16">
+        <div className="flex flex-col gap-8 w-full">
+          <div className="flex-1 min-w-0 max-w-full sm:max-w-[calc(50%-1rem)] lg:max-w-[calc(33.3333%-1rem)]">
+            <div className="flex flex-col justify-start items-start max-w-full sm:max-w-xs md:max-w-[408px]">
+             <DefaultTitle variant="tertiary">  
+              <span className="block">Ficou </span>
+              <span className="block">interessado?</span>                
+              </DefaultTitle>             
+             <div className="text-white py-8">Descubra os materiais da Fast Product Discovery para conhecer melhor nosso processo. E nos siga nas redes sociais para acompanhar as novidades!</div> 
             </div>
-        </>
-    );
+          </div>
+          <div className="flex flex-row flex-wrap justify-start gap-4">
+            <div className="flex-1 min-w-0 max-w-full sm:max-w-[calc(50%-1rem)] lg:max-w-[calc(33.3333%-1rem)]">
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }

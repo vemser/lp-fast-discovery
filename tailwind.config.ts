@@ -17,7 +17,7 @@ const config: Config = {
         'gray-darker': '#333333',
         'gray-dark': '#636363',
         'gray-light': '#F2F2F2',
-        white: '#FFFFFF',
+        'white': '#FFFFFF',
         'blue-bg': '#E9F2FF',
         'blue-dbc-bg': '#1E62FE',
         'modal-overlay': 'rgb(1,6,26)',
