@@ -25,8 +25,7 @@ export default function CardMaterials({
           },
           imgUrl && variant === "imgBg" ? `bg-[url('$(imgUrl'))]` : ""
         )}
-      >
-        {children}
+      >      
       
       <h2 className="text-4xl font-medium text-white">
             {children}
