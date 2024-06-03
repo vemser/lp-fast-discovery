@@ -7,6 +7,8 @@ import {
 } from "@phosphor-icons/react";
 import Image from "next/image";
 
+import logoImg from '../../atoms/assets/logo-dbc/logo.svg'
+
 export default function Footer() {
   const getCurrentYear = () => {
     return new Date().getFullYear();
@@ -17,7 +19,7 @@ export default function Footer() {
       <footer className="flex h-[100%] w-full flex-col items-center justify-center bg-brand-main pt-28 pb-36 text-white">
         <div className="mb-4">
           <Image
-            src="/logo.svg"
+            src={logoImg}
             alt="DBC Company"
             width={80}
             height={80}
@@ -45,8 +47,9 @@ export default function Footer() {
               href="https://www.facebook.com/dbccompany.com.br"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Facebook dbc link"
             >
-              <FacebookLogo size={32} weight="fill" />
+              <FacebookLogo size={32} weight="fill" alt="ícone facebook" />
             </a>
           </div>
           <div className="flex justify-center">
@@ -54,8 +57,9 @@ export default function Footer() {
               href="https://www.instagram.com/dbc.company/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Instagram dbc link"
             >
-              <InstagramLogo size={32} weight="bold" />
+              <InstagramLogo size={32} weight="bold" alt="ícone instagram" />
             </a>
           </div>
           <div className="flex justify-center">
@@ -63,8 +67,9 @@ export default function Footer() {
               href="https://www.linkedin.com/company/dbc-company/mycompany/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Linkedin dbc link"
             >
-              <LinkedinLogo size={32} weight="fill" />
+              <LinkedinLogo size={32} weight="fill" alt="ícone linkedin" />
             </a>
           </div>
           <div className="flex justify-center">
@@ -72,8 +77,9 @@ export default function Footer() {
               href="https://www.youtube.com/@dbc.company"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="youtube dbc link"
             >
-              <YoutubeLogo size={32} weight="fill" />
+              <YoutubeLogo size={32} weight="fill" alt="ícone youtube" />
             </a>
           </div>
         </div>

@@ -12,11 +12,12 @@ import Link from 'next/link';
 export function HeaderDrawer() {
   return (
     <Sheet>
-      <SheetTrigger>
+      <SheetTrigger title='menu'>
         <List
           size={28}
           weight="bold"
           color="#FFF"
+          alt="ícone Menu hambúrguer"
         />
       </SheetTrigger>
       <SheetContent className="bg-brand-darker text-white">
