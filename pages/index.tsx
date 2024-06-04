@@ -16,6 +16,7 @@ import "react-toastify/dist/ReactToastify.min.css";
 import { FastProccessSection } from "@/components/organisms/fast-proccess-section/FastProccessSection";
 import { AgileJourneySection } from "@/components/organisms/agile-journey-section/AgileJourneySection";
 import { BenefitsSection } from "@/components/organisms/benefits-section/BenefitsSection";
+import MoreMaterialsSection from "@/components/organisms/more-materials-section/MoreMaterialsSection";
 
 export default function Home() {
   return (
@@ -32,6 +33,7 @@ export default function Home() {
         <AgileJourneySection />
         <BenefitsSection />
         <FaqSection />
+        <MoreMaterialsSection/>    
         <Footer />
       </section>
     </>
