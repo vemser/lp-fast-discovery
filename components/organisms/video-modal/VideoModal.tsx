@@ -8,8 +8,9 @@ import {
   DialogTrigger,
 } from "../../atoms/dialog/Dialog";
 
+import { YouTubeEmbed } from "@next/third-parties/google";
+
 export function VideoModal() {
-  
   return (
     <Dialog>
       <DialogTrigger asChild>
@@ -21,16 +22,9 @@ export function VideoModal() {
             Confira o vídeo
           </DialogTitle>
           <DialogDescription className="pt-2">
-            <iframe
-              width="100%"
-              onLoad={() => console.log("carregado")}
-              className="h-[350px] md:h-[400px] lg:h-[500px]"
-              src="https://www.youtube.com/embed/1JUXapnk4oE?si=TC04kB5bvDDCRDv0"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            ></iframe>
+            <div className="w-full ">
+              <YouTubeEmbed videoid="1JUXapnk4oE" params="controls=0" style="margin: 0 auto; border-radius: 4px; width: 100%" />
+            </div>
           </DialogDescription>
         </DialogHeader>
       </DialogContent>
