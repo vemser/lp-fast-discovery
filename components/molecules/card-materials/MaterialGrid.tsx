@@ -29,15 +29,24 @@ export default function MaterialGrid() {
           </div>
           <div className="flex-grow-[0.2]">
             <CardMaterials variant="blueLight" text="Empresa de tecnologia">
-              DBC Company
+              <div className="flex w-full items-center justify-between">
+                <Image src="/logo-cubo.png" width={58} height={58} alt="DBC" />
+                <span className="text-2xl font-bold">DBC Company</span>
+                <a href="https://www.dbccompany.com.br/" target="_blank"> {/*aqui parei*/}
+                  <Image src="/open.png" width={32} height={32} alt="Open" />
+                </a>
+              </div>
             </CardMaterials>
           </div>
           <div className="flex-grow-[0.4]">
             <CardMaterials variant="noBack" text="">
-              <div className="relative h-96 w-full" style={{ minHeight: "450px" }}>
+              <div
+                className="relative h-96 w-full"
+                style={{ minHeight: "450px" }}
+              >
                 <Image
                   src="/imgH.png"
-                  layout="fill"                  
+                  layout="fill"
                   objectFit="cover"
                   className="rounded-[12px]"
                   alt="DBC"
@@ -50,10 +59,13 @@ export default function MaterialGrid() {
         <div className="hidden min-h-full flex-1 flex-col gap-8 lg:flex">
           <div className="flex-grow-[0.7]">
             <CardMaterials variant="noBack" text="">
-            <div className="relative h-96 w-full" style={{ minHeight: "700px" }}>
+              <div
+                className="relative h-96 w-full"
+                style={{ minHeight: "700px" }}
+              >
                 <Image
                   src="/imgV.png"
-                  layout="fill"                  
+                  layout="fill"
                   objectFit="cover"
                   className="rounded-[12px]"
                   alt="DBC"
