@@ -3,14 +3,13 @@ import classNames from "classnames";
 interface Cardprops {
   children: React.ReactNode;
   text: string;
-  variant: "blueLight" | "blueDark" | "imgBg";
+  variant: "blueLight" | "blueDark" | "noBack";
   imgUrl?: string;
 }
 
 export default function CardMaterials({
   children,
-  variant,
-  imgUrl,
+  variant,  
   text,
 }: Cardprops) {
   return (
@@ -20,10 +19,10 @@ export default function CardMaterials({
           "w-full p-4 rounded-lg shadow-lg",
           {
             "bg-brand-main": variant === "blueLight",
-            "bg-brand-dark": variant === "blueDark",
-            "bg-cover bgpcenter": variant === "imgBg",
+            "bg-brand-dark": variant === "blueDark", 
+            "brand-darker": variant === "noBack",           
           },
-          imgUrl && variant === "imgBg" ? `bg-[url('$(imgUrl'))]` : ""
+         
         )}
       >      
       

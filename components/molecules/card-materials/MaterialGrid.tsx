@@ -27,16 +27,41 @@ export default function MaterialGrid() {
             </div>
           </div>
           <div className="flex-grow-[0.2]">
-            <CardMaterials variant="blueLight" text="Empresa de tecnologia">DBC Company</CardMaterials>
+            <CardMaterials variant="blueLight" text="Empresa de tecnologia">
+              DBC Company
+            </CardMaterials>
           </div>
-          <div className="flex-grow-[0.4] bg-blue-200">linha3 (imagem)</div>
+          <div className="flex-grow-[0.4]">
+          <CardMaterials variant="noBack" text="">             
+             <img 
+                src="./imgH.png" 
+                width="100%" 
+                height="260px" 
+                className="rounded-[12px] mx-auto"
+                alt="DBC" 
+              />
+              
+            </CardMaterials>
+          </div>
         </div>
 
         <div className="hidden min-h-full flex-1 flex-col gap-8 lg:flex">
-          <div className="flex-grow-[0.7] bg-blue-400">
-            <CardMaterials variant="imgBg" text=""></CardMaterials>
+          <div className="flex-grow-[0.7]">
+            <CardMaterials variant="noBack" text="">             
+             <img 
+                src="./imgV.png" 
+                width="100%" 
+                height="476px" 
+                className="rounded-[12px] mx-auto"
+                alt="DBC" 
+              />
+              
+            </CardMaterials>
           </div>
-          <div className="flex-grow-[0.3] bg-blue-400">linha2</div>
+          <div className="flex-grow-[0.3]">
+             <CardMaterials variant="blueLight" text="Assista o vídeo sobre a Fast Discovery"> {/*Alterar a props depois */}
+              You Tube
+            </CardMaterials></div>
         </div>
 
         <div className="hidden min-h-full flex-1 flex-col gap-8 lg:flex">
