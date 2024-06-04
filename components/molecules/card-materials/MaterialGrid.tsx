@@ -35,8 +35,7 @@ export default function MaterialGrid() {
           <CardMaterials variant="noBack" text="">             
              <img 
                 src="./imgH.png" 
-                width="100%" 
-                height="260px" 
+                width="100%"                  
                 className="rounded-[12px] mx-auto"
                 alt="DBC" 
               />
@@ -50,8 +49,7 @@ export default function MaterialGrid() {
             <CardMaterials variant="noBack" text="">             
              <img 
                 src="./imgV.png" 
-                width="100%" 
-                height="476px" 
+                width="100%"                 
                 className="rounded-[12px] mx-auto"
                 alt="DBC" 
               />
@@ -61,13 +59,26 @@ export default function MaterialGrid() {
           <div className="flex-grow-[0.3]">
              <CardMaterials variant="blueLight" text="Assista o vídeo sobre a Fast Discovery"> {/*Alterar a props depois */}
               You Tube
-            </CardMaterials></div>
+            </CardMaterials>
+            </div>
         </div>
 
         <div className="hidden min-h-full flex-1 flex-col gap-8 lg:flex">
-          <div className="flex-grow-[0.3] bg-blue-400">linha1</div>
-          <div className="flex-grow-[0.3] bg-blue-400">linha2</div>
-          <div className="flex-grow-[0.4] bg-blue-400">linha3</div>
+          <div className="flex-grow-[0.3]">
+          <CardMaterials variant="blueDark" text="leia nosso artigp sobre a Fast Product Discovery"> {/*Alterar a props depois */}
+              Blog
+            </CardMaterials>
+          </div>
+          <div className="flex-grow-[0.3]">
+          <CardMaterials variant="blueLight" text="Confira nosso post sobre a Fast Product Discovery"> {/*Alterar a props depois */}
+              Linkedin
+            </CardMaterials>
+            </div>
+          <div className="flex-grow-[0.4]">
+          <CardMaterials variant="blueDark" text="Descubra a nossa comunidade e recurso no Figma"> {/*Alterar a props depois */}
+              Figma commubuty
+            </CardMaterials>
+            </div>
         </div>
 
         <div className="flex flex-col gap-6 lg:hidden">
