@@ -22,8 +22,11 @@ export function VideoModal() {
             Confira o vídeo
           </DialogTitle>
           <DialogDescription className="pt-2">
-            <div className="w-full ">
-              <YouTubeEmbed videoid="1JUXapnk4oE" params="controls=0" style="margin: 0 auto; border-radius: 4px; width: 100%" />
+            <div className="w-full">
+              <YouTubeEmbed
+                videoid="1JUXapnk4oE"
+                style="margin: 0 auto; border-radius: 4px; width: 100%"
+              />
             </div>
           </DialogDescription>
         </DialogHeader>

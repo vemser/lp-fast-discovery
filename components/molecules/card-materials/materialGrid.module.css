@@ -1,0 +1,76 @@
+.container {
+    max-width: 100%;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .div {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .textCard {
+    height: 232px;
+    background-color: #f0f0f0;
+  }
+  
+  .imageCard {
+    height: 475px;
+    background-color: #f00;
+    background-image: url('/path/to/image.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .thirdCard {
+    height: 475px;
+    background-color: #e0e0e0;
+  }
+  
+  .firstRowTwo {
+    height: 120px;
+    background-color: #d0d0d0;
+  }
+  
+  .thirdCardRowTwo {
+    height: 184px;
+    background-color: #b0b0b0;
+  }
+  
+  .imageCardRowThree {
+    height: 260px;
+    background-color: #ff0;
+    background-image: url('/path/to/image2.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .secondRowThree {
+    height: 184px;
+    background-color: #909090;
+  }
+  
+  .thirdRowThree {
+    height: 260px;
+    background-color: #808080;
+  }
+  
+  /* media e mobile*/
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column;
+    }
+  
+    .imageCard,
+    .imageCardRowThree {
+      display: none;
+    }
+  
+    .div {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
