@@ -9,7 +9,7 @@ export function BigHeroSection() {
   const router = useRouter()
 
   return (
-    <section className="flex items-center h-[90dvh] relative">
+    <section className="flex items-center min-h-[95dvh] relative">
       <DefaultBtn
         variant="text-button"
         className="pr-0 absolute top-2 right-7  md:top-7 md:right-32 text-white"
