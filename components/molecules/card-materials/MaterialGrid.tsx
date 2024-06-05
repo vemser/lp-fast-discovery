@@ -170,18 +170,19 @@ export default function MaterialGrid() {
           </div>
         </div>
 
+
         <div className="flex flex-col gap-6 lg:hidden">
           <div className="w-full"><CardMaterials variant="blueDark">
               <div className="flex w-full items-start p-4 sm:p-8 md:p-12 lg:p-16">
-                <Image src="/figma.png" width={58} height={58} alt="DBC" />
+                <Image src="/logo-cubo.png" width={58} height={58} alt="DBC" />
                 <div className="ml-4 flex flex-col">
-                  <span className="text-3xl font-bold">Figma</span>
+                  <span className="text-3xl font-bold">DBC</span>
                   <span className="mt-12 text-[18px] text-white underline">
-                  Descubra nossa <br/>comunidade e <br/>recursos no Figma.
+                  Empresa de tecnologia
                   </span>
                 </div>
                 <a
-                  href="https://www.linkedin.com/company/dbc-company/mycompany/"                  
+                  href="https://www.dbccompany.com.br/"                  
                   target="_blank"
                   className="ml-auto"
                 >
@@ -192,15 +193,16 @@ export default function MaterialGrid() {
           <div className="w-full">
           <CardMaterials variant="blueDark">
               <div className="flex w-full items-start p-4 sm:p-8 md:p-12 lg:p-16">
-                <Image src="/figma.png" width={58} height={58} alt="DBC" />
+                <Image src="/youtube.png" width={58} height={58} alt="DBC" />
                 <div className="ml-4 flex flex-col">
-                  <span className="text-3xl font-bold">Figma</span>
+                  <span className="text-3xl font-bold">YouTube</span>
                   <span className="mt-12 text-[18px] text-white underline">
-                  Descubra nossa <br/>comunidade e <br/>recursos no Figma.
+                  Assista o vídeo sobre a <br/>
+                  Fast Product Discovery
                   </span>
                 </div>
                 <a
-                  href="https://www.linkedin.com/company/dbc-company/mycompany/"                  
+                  href="https://www.youtube.com/@dbc.company"                
                   target="_blank"
                   className="ml-auto"
                 >
@@ -212,15 +214,16 @@ export default function MaterialGrid() {
           <div className="w-full">
           <CardMaterials variant="blueDark">
               <div className="flex w-full items-start p-4 sm:p-8 md:p-12 lg:p-16">
-                <Image src="/figma.png" width={58} height={58} alt="DBC" />
+                <Image src="/blog.png" width={58} height={58} alt="DBC" />
                 <div className="ml-4 flex flex-col">
-                  <span className="text-3xl font-bold">Figma</span>
+                  <span className="text-3xl font-bold">Blog</span>
                   <span className="mt-12 text-[18px] text-white underline">
-                  Descubra nossa <br/>comunidade e <br/>recursos no Figma.
+                  Leia nosso artigo sobre <br/>
+                  a Fast Product Discovery
                   </span>
                 </div>
                 <a
-                  href="https://www.linkedin.com/company/dbc-company/mycompany/"                  
+                  href="https://www.dbccompany.com.br/fast-product-discovery-o-melhor-de-3-praticas-para-criar-um-eficaz-ciclo-de-descobrimento/"                   
                   target="_blank"
                   className="ml-auto"
                 >
@@ -232,11 +235,12 @@ export default function MaterialGrid() {
           <div className="w-full">
           <CardMaterials variant="blueDark">
               <div className="flex w-full items-start p-4 sm:p-8 md:p-12 lg:p-16">
-                <Image src="/figma.png" width={58} height={58} alt="DBC" />
+                <Image src="/linkedin.png" width={58} height={58} alt="DBC" />
                 <div className="ml-4 flex flex-col">
-                  <span className="text-3xl font-bold">Figma</span>
+                  <span className="text-3xl font-bold">Linkedin</span>
                   <span className="mt-12 text-[18px] text-white underline">
-                  Descubra nossa <br/>comunidade e <br/>recursos no Figma.
+                  DConfira nosso post sobre <br/>
+                  a Fast Product Discovery
                   </span>
                 </div>
                 <a
