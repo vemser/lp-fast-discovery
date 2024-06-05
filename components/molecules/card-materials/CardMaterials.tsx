@@ -2,7 +2,6 @@ import classNames from "classnames";
 
 interface Cardprops {
   children: React.ReactNode;
-  text: string;
   variant: "blueLight" | "blueDark" | "noBack";
   imgUrl?: string;
 }
@@ -10,7 +9,7 @@ interface Cardprops {
 export default function CardMaterials({
   children,
   variant,  
-  text,
+ 
 }: Cardprops) {
   return (
     <>
@@ -28,8 +27,7 @@ export default function CardMaterials({
       
       <h2 className="text-4xl font-medium text-white">
             {children}
-        </h2>
-        <p className="text-white text-[24px] underline mt-4">{text}</p>
+        </h2>        
       </div>
     </>
   );
