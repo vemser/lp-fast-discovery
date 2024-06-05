@@ -6,7 +6,7 @@ import styles from './card-style.module.css';
 export default function MoreMaterialsSection() {
   return (
     <>
-    <div className={styles.container}>      
+    <div className={styles.container}>     
       
       
       <MaterialGrid/>
