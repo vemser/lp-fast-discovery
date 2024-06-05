@@ -29,6 +29,27 @@ export default function MaterialGrid() {
           </div>
           <div className="flex-grow-[0.2]">
             <CardMaterials variant="blueLight">
+              <div className="flex w-full items-start">
+                <Image src="/logo-cubo.png" width={58} height={58} alt="DBC" />
+                <div className="ml-4 flex flex-col p-0 sm:p-2 md:p-4 lg:p-8">
+                  <span className="w-full items-center ml-2">
+                    DBC Company
+                  </span>
+                  <span className="w-full items-center ml-2 mt-6 text-base text-white underline">
+                    Empresa de tecnologia
+                  </span>
+                </div>
+                <a
+                  href="https://www.dbccompany.com.br/"
+                  target="_blank"
+                  className="ml-auto"
+                >
+                  <Image src="/open.png" width={32} height={32} alt="Open" />
+                </a>
+              </div>
+            </CardMaterials>
+
+            {/* <CardMaterials variant="blueLight">
               <div className="flex w-full items-start p-4 sm:p-8 md:p-12 lg:p-16">
                 <Image src="/logo-cubo.png" width={58} height={58} alt="DBC" />
                 <div className="ml-4 flex flex-col">
@@ -45,7 +66,7 @@ export default function MaterialGrid() {
                   <Image src="/open.png" width={32} height={32} alt="Open" />
                 </a>
               </div>
-            </CardMaterials>
+            </CardMaterials> */}
           </div>
           <div className="flex-grow-[0.4]">
             <CardMaterials variant="noBack">
@@ -83,14 +104,16 @@ export default function MaterialGrid() {
             </CardMaterials>
           </div>
           <div className="flex-grow-[0.3]">
-          <CardMaterials variant="blueLight">
-              <div className="flex w-full items-start p-4 sm:p-8 md:p-12 lg:p-16">
+            <CardMaterials variant="blueLight">
+              <div className="flex w-full items-start">
                 <Image src="/youtube.png" width={58} height={58} alt="DBC" />
-                <div className="ml-4 flex flex-col">
-                  <span className="text-5xl font-bold ml-20">YouTube</span>
-                  <span className="mt-6 text-[22px] text-white underline ml-20">
-                  Assista o vídeo sobre a <br/>
-                  Fast Product Discovery
+                <div className="ml-4 flex flex-col p-0 sm:p-2 md:p-4 lg:p-8">
+                  <span className="w-full items-center ml-2">
+                    Youtube
+                  </span>
+                  <span className="w-full items-center ml-2 mt-6 text-base text-white underline">
+                   Assista o vídeo sobre a <br/>
+                   Fasta product Discovery
                   </span>
                 </div>
                 <a
@@ -107,18 +130,20 @@ export default function MaterialGrid() {
 
         <div className="hidden min-h-full flex-1 flex-col gap-8 lg:flex">
           <div className="flex-grow-[0.3]">
-          <CardMaterials variant="blueDark">
-              <div className="flex w-full items-start p-4 sm:p-8 md:p-12 lg:p-16">
+            <CardMaterials variant="blueDark">
+              <div className="flex w-full items-start">
                 <Image src="/blog.png" width={58} height={58} alt="DBC" />
-                <div className="ml-4 flex flex-col">
-                  <span className="text-5xl font-bold ml-20">Blog</span>
-                  <span className="mt-10 text-[22px] text-white underline ml-20">
-                  Leia nosso artigo sobre <br/>
-                  a Fast Product Discovery
+                <div className="ml-4 flex flex-col p-0 sm:p-2 md:p-4 lg:p-8">
+                  <span className="w-full items-center ml-2">
+                    Blog
+                  </span>
+                  <span className="w-full items-center ml-2 mt-6 text-base text-white underline">
+                    Leia nosso artigo sobre a <br/>
+                    Fast Product Discovery
                   </span>
                 </div>
                 <a
-                  href="https://www.dbccompany.com.br/fast-product-discovery-o-melhor-de-3-praticas-para-criar-um-eficaz-ciclo-de-descobrimento/"                  
+                  href="https://www.dbccompany.com.br/fast-product-discovery-o-melhor-de-3-praticas-para-criar-um-eficaz-ciclo-de-descobrimento/"
                   target="_blank"
                   className="ml-auto"
                 >
@@ -128,18 +153,20 @@ export default function MaterialGrid() {
             </CardMaterials>
           </div>
           <div className="flex-grow-[0.3]">
-          <CardMaterials variant="blueLight">
-              <div className="flex w-full items-start p-4 sm:p-8 md:p-12 lg:p-16">
+            <CardMaterials variant="blueLight">
+              <div className="flex w-full items-start">
                 <Image src="/linkedin.png" width={58} height={58} alt="DBC" />
-                <div className="ml-4 flex flex-col">
-                  <span className="text-5xl font-bold ml-20">Linkedin</span>
-                  <span className="mt-10 text-[22px] text-white underline ml-20">
-                  Confira nosso post sobre <br/>
-                  a Fast Product Discovery
+                <div className="ml-4 flex flex-col p-0 sm:p-2 md:p-4 lg:p-8">
+                  <span className="w-full items-center ml-2">
+                    Linkedin
+                  </span>
+                  <span className="w-full items-center ml-2 mt-6 text-base text-white underline">
+                    Confira nosso post sobre <br/>
+                    Fast Product Discovery
                   </span>
                 </div>
                 <a
-                  href="https://www.linkedin.com/company/dbc-company/mycompany/"                  
+                  href="https://www.linkedin.com/company/dbc-company/mycompany/"
                   target="_blank"
                   className="ml-auto"
                 >
@@ -149,17 +176,20 @@ export default function MaterialGrid() {
             </CardMaterials>
           </div>
           <div className="flex-grow-[0.4]">
-          <CardMaterials variant="blueDark">
-              <div className="flex w-full items-start p-4 sm:p-8 md:p-12 lg:p-16">
+            <CardMaterials variant="blueDark">
+              <div className="flex w-full items-start">
                 <Image src="/figma.png" width={58} height={58} alt="DBC" />
-                <div className="ml-4 flex flex-col">
-                  <span className="text-5xl font-bold ml-20">Figma</span>
-                  <span className="mt-12 text-[22px] text-white underline ml-20">
-                  Descubra nossa <br/>comunidade e <br/>recursos no Figma.
+                <div className="ml-4 flex flex-col p-0 sm:p-2 md:p-4 lg:p-8">
+                  <span className="w-full items-center ml-2">
+                    Figma
+                  </span>
+                  <span className="w-full items-center ml-2 mt-6 text-base text-white underline">
+                    Descubra nossa comunidade e <br/>
+                    recursos no Figma
                   </span>
                 </div>
                 <a
-                  href="https://www.linkedin.com/company/dbc-company/mycompany/"                  
+                  href="https://www.dbccompany.com.br"
                   target="_blank"
                   className="ml-auto"
                 >
@@ -170,39 +200,40 @@ export default function MaterialGrid() {
           </div>
         </div>
 
-
         <div className="flex flex-col gap-6 lg:hidden">
-          <div className="w-full"><CardMaterials variant="blueDark">
+          <div className="w-full">
+            <CardMaterials variant="blueDark">
               <div className="flex w-full items-start p-4 sm:p-8 md:p-12 lg:p-16">
                 <Image src="/logo-cubo.png" width={58} height={58} alt="DBC" />
                 <div className="ml-4 flex flex-col">
                   <span className="text-3xl font-bold">DBC</span>
                   <span className="mt-12 text-[18px] text-white underline">
-                  Empresa de tecnologia
+                    Empresa de tecnologia
                   </span>
                 </div>
                 <a
-                  href="https://www.dbccompany.com.br/"                  
+                  href="https://www.dbccompany.com.br/"
                   target="_blank"
                   className="ml-auto"
                 >
                   <Image src="/open.png" width={32} height={32} alt="Open" />
                 </a>
               </div>
-            </CardMaterials></div>
+            </CardMaterials>
+          </div>
           <div className="w-full">
-          <CardMaterials variant="blueDark">
+            <CardMaterials variant="blueDark">
               <div className="flex w-full items-start p-4 sm:p-8 md:p-12 lg:p-16">
                 <Image src="/youtube.png" width={58} height={58} alt="DBC" />
                 <div className="ml-4 flex flex-col">
                   <span className="text-3xl font-bold">YouTube</span>
                   <span className="mt-12 text-[18px] text-white underline">
-                  Assista o vídeo sobre a <br/>
-                  Fast Product Discovery
+                    Assista o vídeo sobre a <br />
+                    Fast Product Discovery
                   </span>
                 </div>
                 <a
-                  href="https://www.youtube.com/@dbc.company"                
+                  href="https://www.youtube.com/@dbc.company"
                   target="_blank"
                   className="ml-auto"
                 >
@@ -212,18 +243,17 @@ export default function MaterialGrid() {
             </CardMaterials>
           </div>
           <div className="w-full">
-          <CardMaterials variant="blueDark">
+            <CardMaterials variant="blueDark">
               <div className="flex w-full items-start p-4 sm:p-8 md:p-12 lg:p-16">
                 <Image src="/blog.png" width={58} height={58} alt="DBC" />
                 <div className="ml-4 flex flex-col">
                   <span className="text-3xl font-bold">Blog</span>
                   <span className="mt-12 text-[18px] text-white underline">
-                  Leia nosso artigo sobre <br/>
-                  a Fast Product Discovery
+                    Leia nosso artigo sobre <br />a Fast Product Discovery
                   </span>
                 </div>
                 <a
-                  href="https://www.dbccompany.com.br/fast-product-discovery-o-melhor-de-3-praticas-para-criar-um-eficaz-ciclo-de-descobrimento/"                   
+                  href="https://www.dbccompany.com.br/fast-product-discovery-o-melhor-de-3-praticas-para-criar-um-eficaz-ciclo-de-descobrimento/"
                   target="_blank"
                   className="ml-auto"
                 >
@@ -233,18 +263,17 @@ export default function MaterialGrid() {
             </CardMaterials>
           </div>
           <div className="w-full">
-          <CardMaterials variant="blueDark">
+            <CardMaterials variant="blueDark">
               <div className="flex w-full items-start p-4 sm:p-8 md:p-12 lg:p-16">
                 <Image src="/linkedin.png" width={58} height={58} alt="DBC" />
                 <div className="ml-4 flex flex-col">
                   <span className="text-3xl font-bold">Linkedin</span>
                   <span className="mt-12 text-[18px] text-white underline">
-                  DConfira nosso post sobre <br/>
-                  a Fast Product Discovery
+                    DConfira nosso post sobre <br />a Fast Product Discovery
                   </span>
                 </div>
                 <a
-                  href="https://www.linkedin.com/company/dbc-company/mycompany/"                  
+                  href="https://www.linkedin.com/company/dbc-company/mycompany/"
                   target="_blank"
                   className="ml-auto"
                 >
@@ -254,17 +283,19 @@ export default function MaterialGrid() {
             </CardMaterials>
           </div>
           <div className="w-full">
-          <CardMaterials variant="blueDark">
+            <CardMaterials variant="blueDark">
               <div className="flex w-full items-start p-4 sm:p-8 md:p-12 lg:p-16">
                 <Image src="/figma.png" width={58} height={58} alt="DBC" />
                 <div className="ml-4 flex flex-col">
                   <span className="text-3xl font-bold">Figma</span>
                   <span className="mt-12 text-[18px] text-white underline">
-                  Descubra nossa <br/>comunidade e <br/>recursos no Figma.
+                    Descubra nossa <br />
+                    comunidade e <br />
+                    recursos no Figma.
                   </span>
                 </div>
                 <a
-                  href="https://www.linkedin.com/company/dbc-company/mycompany/"                  
+                  href="https://www.linkedin.com/company/dbc-company/mycompany/"
                   target="_blank"
                   className="ml-auto"
                 >
