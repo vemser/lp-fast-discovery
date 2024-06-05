@@ -3,6 +3,8 @@ import Image from 'next/image';
 import { HeaderDrawer } from '../header-drawer/HeaderDrawer';
 import Link from 'next/link';
 
+import logoImg from '../../atoms/assets/logo-dbc/logo.svg'
+
 export default function BarNav() {
   return (
     <>
@@ -10,7 +12,7 @@ export default function BarNav() {
         <div className="flex items-center">
           <Link href="#">
           <Image
-            src="/logo.svg"
+            src={logoImg}
             alt="DBC Company"
             width={100}
             height={32}

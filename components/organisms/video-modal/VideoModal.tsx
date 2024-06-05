@@ -1,4 +1,4 @@
-import DefaultBtn from '@/components/atoms/default-btn/DefaultBtn';
+import DefaultBtn from "@/components/atoms/default-btn/DefaultBtn";
 import {
   Dialog,
   DialogContent,
@@ -6,23 +6,28 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '../../atoms/dialog/Dialog';
+} from "../../atoms/dialog/Dialog";
+
+import { YouTubeEmbed } from "@next/third-parties/google";
 
 export function VideoModal() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <DefaultBtn className='w-full lg:w-fit'>
-          Ver vídeo
-        </DefaultBtn>
+        <DefaultBtn className="w-full lg:w-fit">Ver vídeo</DefaultBtn>
       </DialogTrigger>
-      <DialogContent className='bg-white max-w-[870px]'>
+      <DialogContent className="max-w-[870px] bg-white">
         <DialogHeader>
-          <DialogTitle className='pb-2 border-b-2 border-gray-light'>Confira o vídeo</DialogTitle>
-          <DialogDescription className='pt-2'>
-            <video className='w-100' controls preload='auto'>
-              <source src="/video-rafa-oliveira-fast-discovery.mp4" type="video/mp4"/>
-            </video>
+          <DialogTitle className="border-b-2 border-gray-light pb-2">
+            Confira o vídeo
+          </DialogTitle>
+          <DialogDescription className="pt-2">
+            <div className="w-full">
+              <YouTubeEmbed
+                videoid="1JUXapnk4oE"
+                style="margin: 0 auto; border-radius: 4px; width: 100%"
+              />
+            </div>
           </DialogDescription>
         </DialogHeader>
       </DialogContent>

@@ -8,7 +8,7 @@ import {
 import AutoPlay from 'embla-carousel-autoplay';
 import Fade from 'embla-carousel-fade';
 
-import ImgPostIt from '../../atoms/assets/imgs/bg_anima_dois.png';
+import ImgPostIt from '../../atoms/assets/imgs/bg_anima_dois.jpg';
 import imgPeople from '../../atoms/assets/imgs/bg_anima_um.png';
 
 interface HeroCarouselProps {
@@ -43,8 +43,10 @@ export function HeroCarousel({ isStopAnimate }: HeroCarouselProps) {
           ></div>
           <Image
             src={ImgPostIt}
+            quality={60}
+            placeholder='blur'
             alt="Pessoa segurando a escrita da caneta azul no papel branco"
-            className="object-cover h-full"
+            className="object-cover h-full w-[100vw]"
           />
         </CarouselItem>
         <CarouselItem className="h-[100vh] w-[100vw]">
@@ -57,8 +59,10 @@ export function HeroCarousel({ isStopAnimate }: HeroCarouselProps) {
           ></div>
           <Image
             src={imgPeople}
+            quality={60}
+            placeholder='blur'
             alt="Dois homens apresentando um poster com post-its"
-            className="object-cover h-full"
+            className="object-cover h-full w-[100vw]"
           />
         </CarouselItem>
       </CarouselContent>

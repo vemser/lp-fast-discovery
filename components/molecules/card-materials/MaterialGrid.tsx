@@ -105,7 +105,7 @@ export default function MaterialGrid() {
           </div>
           <div className="flex-grow-[0.3]">
             <CardMaterials variant="blueLight">
-              <div className="flex w-full items-start">
+              <div className="flex w-full items-start lg:items-center">
                 <Image src="/youtube.png" width={58} height={58} alt="DBC" />
                 <div className="ml-4 flex flex-col p-0 sm:p-2 md:p-4 lg:p-8">
                   <span className="w-full items-center ml-2">
@@ -131,7 +131,7 @@ export default function MaterialGrid() {
         <div className="hidden min-h-full flex-1 flex-col gap-8 lg:flex">
           <div className="flex-grow-[0.3]">
             <CardMaterials variant="blueDark">
-              <div className="flex w-full items-start">
+              <div className="flex w-full items-start lg:items-center">
                 <Image src="/blog.png" width={58} height={58} alt="DBC" />
                 <div className="ml-4 flex flex-col p-0 sm:p-2 md:p-4 lg:p-8">
                   <span className="w-full items-center ml-2">
@@ -154,7 +154,7 @@ export default function MaterialGrid() {
           </div>
           <div className="flex-grow-[0.3]">
             <CardMaterials variant="blueLight">
-              <div className="flex w-full items-start">
+              <div className="flex w-full items-start lg:items-center">
                 <Image src="/linkedin.png" width={58} height={58} alt="DBC" />
                 <div className="ml-4 flex flex-col p-0 sm:p-2 md:p-4 lg:p-8">
                   <span className="w-full items-center ml-2">
@@ -177,7 +177,7 @@ export default function MaterialGrid() {
           </div>
           <div className="flex-grow-[0.4]">
             <CardMaterials variant="blueDark">
-              <div className="flex w-full items-start">
+              <div className="flex w-full h-full items-start lg:items-center flex-1">
                 <Image src="/figma.png" width={58} height={58} alt="DBC" />
                 <div className="ml-4 flex flex-col p-0 sm:p-2 md:p-4 lg:p-8">
                   <span className="w-full items-center ml-2">
@@ -200,9 +200,10 @@ export default function MaterialGrid() {
           </div>
         </div>
 
+        {/* MOBILE */}
         <div className="flex flex-col gap-6 lg:hidden">
           <div className="w-full">
-            <CardMaterials variant="blueDark">
+            <CardMaterials variant="blueLight">
               <div className="flex w-full items-start p-4 sm:p-8 md:p-12 lg:p-16">
                 <Image src="/logo-cubo.png" width={58} height={58} alt="DBC" />
                 <div className="ml-4 flex flex-col">
@@ -243,7 +244,7 @@ export default function MaterialGrid() {
             </CardMaterials>
           </div>
           <div className="w-full">
-            <CardMaterials variant="blueDark">
+            <CardMaterials variant="blueLight">
               <div className="flex w-full items-start p-4 sm:p-8 md:p-12 lg:p-16">
                 <Image src="/blog.png" width={58} height={58} alt="DBC" />
                 <div className="ml-4 flex flex-col">
@@ -283,9 +284,9 @@ export default function MaterialGrid() {
             </CardMaterials>
           </div>
           <div className="w-full">
-            <CardMaterials variant="blueDark">
+            <CardMaterials variant="blueLight">
               <div className="flex w-full items-start p-4 sm:p-8 md:p-12 lg:p-16">
-                <Image src="/figma.png" width={58} height={58} alt="DBC" />
+                <Image src="/figma.png" width={58} height={58} alt="logo figma"  />
                 <div className="ml-4 flex flex-col">
                   <span className="text-3xl font-bold">Figma</span>
                   <span className="mt-12 text-[18px] text-white underline">

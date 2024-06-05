@@ -15,7 +15,7 @@ export default function CardMaterials({
     <>
       <div
         className={classNames(
-          "w-full p-4 rounded-lg shadow-lg",
+          "w-full p-4 rounded-lg shadow-lg h-full",
           {
             "bg-brand-main": variant === "blueLight",
             "bg-brand-dark": variant === "blueDark", 
@@ -25,7 +25,7 @@ export default function CardMaterials({
         )}
       >      
       
-      <h2 className="text-4xl font-medium text-white">
+      <h2 className="text-4xl font-medium text-white w-full h-full flex">
             {children}
         </h2>        
       </div>

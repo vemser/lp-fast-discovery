@@ -1,7 +1,7 @@
-import { cn } from '@/utils/tailwindMerge';
-import { EnvelopeSimple, Info } from '@phosphor-icons/react';
-import { ButtonHTMLAttributes } from 'react';
-import { Id, toast } from 'react-toastify';
+import { cn } from "@/utils/tailwindMerge";
+import { EnvelopeSimple, Info } from "@phosphor-icons/react";
+import { ButtonHTMLAttributes } from "react";
+import { Id, toast } from "react-toastify";
 
 type EmailBtnProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   className?: string;
@@ -10,7 +10,7 @@ type EmailBtnProps = ButtonHTMLAttributes<HTMLButtonElement> & {
 export function EmailBtn({ className, ...rest }: EmailBtnProps) {
   async function handleCopyEmail() {
     const emailValue =
-      process.env.EMAIL_CLIPBOARD ?? 'contato@dbccompany.com.br';
+      process.env.EMAIL_CLIPBOARD ?? "contato@dbccompany.com.br";
     navigator.clipboard.writeText(emailValue);
 
     const emailInClipboard = await navigator.clipboard.readText();
@@ -19,8 +19,8 @@ export function EmailBtn({ className, ...rest }: EmailBtnProps) {
     if (isEmailCopyed) {
       const toastId = toast(<ToastContainer />, {
         hideProgressBar: true,
-        style: { background: '#004BF5' },
-        theme: 'colored',
+        style: { background: "#004BF5" },
+        theme: "colored",
         closeButton: () => <ToastButton toastId={toastId} />,
       });
     }
@@ -40,7 +40,7 @@ export function EmailBtn({ className, ...rest }: EmailBtnProps) {
   function ToastButton({ toastId }: { toastId: Id }) {
     return (
       <button
-        className="text-white pr-4"
+        className="pr-4 text-white"
         onClick={() => toast.dismiss(toastId)}
       >
         Fechar
@@ -51,13 +51,17 @@ export function EmailBtn({ className, ...rest }: EmailBtnProps) {
   return (
     <button
       className={cn(
-        'w-[50px] h-[50px] md:w-[80px] md:h-[80px] rounded-full flex items-center justify-center transition-all duration-300 bg-brand-main text-white hover:bg-brand-dark active:bg-brand-darker disabled:bg-gray-dark disabled:cursor-not-allowed focus:outline-2 focus:outline-brand-dark',
-        className
+        "flex h-[50px] w-[50px] items-center justify-center rounded-full bg-brand-main text-white transition-all duration-300 hover:bg-brand-dark focus:outline-2 focus:outline-brand-dark active:bg-brand-darker disabled:cursor-not-allowed disabled:bg-gray-dark md:h-[80px] md:w-[80px]",
+        className,
       )}
       onClick={handleCopyEmail}
+      aria-label="Botão copiar e-mail para área de transferência"
       {...rest}
     >
-      <EnvelopeSimple className='text-3xl md:text-5xl' />
+      <EnvelopeSimple
+        className="text-3xl md:text-5xl"
+        alt="ícone de envelope, simbolizando e-mail"
+      />
     </button>
   );
 }
