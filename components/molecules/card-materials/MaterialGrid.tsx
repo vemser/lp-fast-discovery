@@ -29,7 +29,7 @@ export default function MaterialGrid() {
           </div>
           <div className="flex-grow-[0.2]">
             <CardMaterials variant="blueLight">
-              <div className="flex w-full items-start p-16">
+              <div className="flex w-full items-start p-4 sm:p-8 md:p-12 lg:p-16">
                 <Image src="/logo-cubo.png" width={58} height={58} alt="DBC" />
                 <div className="ml-4 flex flex-col">
                   <span className="text-5xl font-bold ml-20">DBC Company</span>
@@ -84,7 +84,7 @@ export default function MaterialGrid() {
           </div>
           <div className="flex-grow-[0.3]">
           <CardMaterials variant="blueLight">
-              <div className="flex w-full items-start p-16">
+              <div className="flex w-full items-start p-4 sm:p-8 md:p-12 lg:p-16">
                 <Image src="/youtube.png" width={58} height={58} alt="DBC" />
                 <div className="ml-4 flex flex-col">
                   <span className="text-5xl font-bold ml-20">YouTube</span>
@@ -108,7 +108,7 @@ export default function MaterialGrid() {
         <div className="hidden min-h-full flex-1 flex-col gap-8 lg:flex">
           <div className="flex-grow-[0.3]">
           <CardMaterials variant="blueDark">
-              <div className="flex w-full items-start p-16">
+              <div className="flex w-full items-start p-4 sm:p-8 md:p-12 lg:p-16">
                 <Image src="/blog.png" width={58} height={58} alt="DBC" />
                 <div className="ml-4 flex flex-col">
                   <span className="text-5xl font-bold ml-20">Blog</span>
@@ -129,7 +129,7 @@ export default function MaterialGrid() {
           </div>
           <div className="flex-grow-[0.3]">
           <CardMaterials variant="blueLight">
-              <div className="flex w-full items-start p-16">
+              <div className="flex w-full items-start p-4 sm:p-8 md:p-12 lg:p-16">
                 <Image src="/linkedin.png" width={58} height={58} alt="DBC" />
                 <div className="ml-4 flex flex-col">
                   <span className="text-5xl font-bold ml-20">Linkedin</span>
@@ -150,7 +150,7 @@ export default function MaterialGrid() {
           </div>
           <div className="flex-grow-[0.4]">
           <CardMaterials variant="blueDark">
-              <div className="flex w-full items-start p-16">
+              <div className="flex w-full items-start p-4 sm:p-8 md:p-12 lg:p-16">
                 <Image src="/figma.png" width={58} height={58} alt="DBC" />
                 <div className="ml-4 flex flex-col">
                   <span className="text-5xl font-bold ml-20">Figma</span>
@@ -171,9 +171,104 @@ export default function MaterialGrid() {
         </div>
 
         <div className="flex flex-col gap-6 lg:hidden">
-          <div className="w-full bg-blue-400">linha1</div>
-          <div className="w-full bg-blue-400">linha2</div>
-          <div className="w-full bg-blue-400">linha3</div>
+          <div className="w-full"><CardMaterials variant="blueDark">
+              <div className="flex w-full items-start p-4 sm:p-8 md:p-12 lg:p-16">
+                <Image src="/figma.png" width={58} height={58} alt="DBC" />
+                <div className="ml-4 flex flex-col">
+                  <span className="text-3xl font-bold">Figma</span>
+                  <span className="mt-12 text-[18px] text-white underline">
+                  Descubra nossa <br/>comunidade e <br/>recursos no Figma.
+                  </span>
+                </div>
+                <a
+                  href="https://www.linkedin.com/company/dbc-company/mycompany/"                  
+                  target="_blank"
+                  className="ml-auto"
+                >
+                  <Image src="/open.png" width={32} height={32} alt="Open" />
+                </a>
+              </div>
+            </CardMaterials></div>
+          <div className="w-full">
+          <CardMaterials variant="blueDark">
+              <div className="flex w-full items-start p-4 sm:p-8 md:p-12 lg:p-16">
+                <Image src="/figma.png" width={58} height={58} alt="DBC" />
+                <div className="ml-4 flex flex-col">
+                  <span className="text-3xl font-bold">Figma</span>
+                  <span className="mt-12 text-[18px] text-white underline">
+                  Descubra nossa <br/>comunidade e <br/>recursos no Figma.
+                  </span>
+                </div>
+                <a
+                  href="https://www.linkedin.com/company/dbc-company/mycompany/"                  
+                  target="_blank"
+                  className="ml-auto"
+                >
+                  <Image src="/open.png" width={32} height={32} alt="Open" />
+                </a>
+              </div>
+            </CardMaterials>
+          </div>
+          <div className="w-full">
+          <CardMaterials variant="blueDark">
+              <div className="flex w-full items-start p-4 sm:p-8 md:p-12 lg:p-16">
+                <Image src="/figma.png" width={58} height={58} alt="DBC" />
+                <div className="ml-4 flex flex-col">
+                  <span className="text-3xl font-bold">Figma</span>
+                  <span className="mt-12 text-[18px] text-white underline">
+                  Descubra nossa <br/>comunidade e <br/>recursos no Figma.
+                  </span>
+                </div>
+                <a
+                  href="https://www.linkedin.com/company/dbc-company/mycompany/"                  
+                  target="_blank"
+                  className="ml-auto"
+                >
+                  <Image src="/open.png" width={32} height={32} alt="Open" />
+                </a>
+              </div>
+            </CardMaterials>
+          </div>
+          <div className="w-full">
+          <CardMaterials variant="blueDark">
+              <div className="flex w-full items-start p-4 sm:p-8 md:p-12 lg:p-16">
+                <Image src="/figma.png" width={58} height={58} alt="DBC" />
+                <div className="ml-4 flex flex-col">
+                  <span className="text-3xl font-bold">Figma</span>
+                  <span className="mt-12 text-[18px] text-white underline">
+                  Descubra nossa <br/>comunidade e <br/>recursos no Figma.
+                  </span>
+                </div>
+                <a
+                  href="https://www.linkedin.com/company/dbc-company/mycompany/"                  
+                  target="_blank"
+                  className="ml-auto"
+                >
+                  <Image src="/open.png" width={32} height={32} alt="Open" />
+                </a>
+              </div>
+            </CardMaterials>
+          </div>
+          <div className="w-full">
+          <CardMaterials variant="blueDark">
+              <div className="flex w-full items-start p-4 sm:p-8 md:p-12 lg:p-16">
+                <Image src="/figma.png" width={58} height={58} alt="DBC" />
+                <div className="ml-4 flex flex-col">
+                  <span className="text-3xl font-bold">Figma</span>
+                  <span className="mt-12 text-[18px] text-white underline">
+                  Descubra nossa <br/>comunidade e <br/>recursos no Figma.
+                  </span>
+                </div>
+                <a
+                  href="https://www.linkedin.com/company/dbc-company/mycompany/"                  
+                  target="_blank"
+                  className="ml-auto"
+                >
+                  <Image src="/open.png" width={32} height={32} alt="Open" />
+                </a>
+              </div>
+            </CardMaterials>
+          </div>
         </div>
       </div>
     </div>
