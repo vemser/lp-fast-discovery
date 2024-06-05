@@ -29,11 +29,11 @@ export default function MaterialGrid() {
           </div>
           <div className="flex-grow-[0.2]">
             <CardMaterials variant="blueLight">
-              <div className="flex w-full items-start">
+              <div className="flex w-full items-start p-16">
                 <Image src="/logo-cubo.png" width={58} height={58} alt="DBC" />
                 <div className="ml-4 flex flex-col">
-                  <span className="text-2xl font-bold">DBC Company</span>
-                  <span className="mt-2 text-[24px] text-white underline">
+                  <span className="text-5xl font-bold ml-20">DBC Company</span>
+                  <span className="mt-4 ml-20 text-[22px] text-white underline">
                     Empresa de tecnologia
                   </span>
                 </div>
@@ -83,19 +83,90 @@ export default function MaterialGrid() {
             </CardMaterials>
           </div>
           <div className="flex-grow-[0.3]">
-            <CardMaterials variant="blueLight">You Tube</CardMaterials>
+          <CardMaterials variant="blueLight">
+              <div className="flex w-full items-start p-16">
+                <Image src="/youtube.png" width={58} height={58} alt="DBC" />
+                <div className="ml-4 flex flex-col">
+                  <span className="text-5xl font-bold ml-20">YouTube</span>
+                  <span className="mt-6 text-[22px] text-white underline ml-20">
+                  Assista o vídeo sobre a <br/>
+                  Fast Product Discovery
+                  </span>
+                </div>
+                <a
+                  href="https://www.youtube.com/@dbc.company"
+                  target="_blank"
+                  className="ml-auto"
+                >
+                  <Image src="/open.png" width={32} height={32} alt="Open" />
+                </a>
+              </div>
+            </CardMaterials>
           </div>
         </div>
 
         <div className="hidden min-h-full flex-1 flex-col gap-8 lg:flex">
           <div className="flex-grow-[0.3]">
-            <CardMaterials variant="blueDark">Blog</CardMaterials>
+          <CardMaterials variant="blueDark">
+              <div className="flex w-full items-start p-16">
+                <Image src="/blog.png" width={58} height={58} alt="DBC" />
+                <div className="ml-4 flex flex-col">
+                  <span className="text-5xl font-bold ml-20">Blog</span>
+                  <span className="mt-10 text-[22px] text-white underline ml-20">
+                  Leia nosso artigo sobre <br/>
+                  a Fast Product Discovery
+                  </span>
+                </div>
+                <a
+                  href="https://www.dbccompany.com.br/fast-product-discovery-o-melhor-de-3-praticas-para-criar-um-eficaz-ciclo-de-descobrimento/"                  
+                  target="_blank"
+                  className="ml-auto"
+                >
+                  <Image src="/open.png" width={32} height={32} alt="Open" />
+                </a>
+              </div>
+            </CardMaterials>
           </div>
           <div className="flex-grow-[0.3]">
-            <CardMaterials variant="blueLight">Linkedin</CardMaterials>
+          <CardMaterials variant="blueLight">
+              <div className="flex w-full items-start p-16">
+                <Image src="/linkedin.png" width={58} height={58} alt="DBC" />
+                <div className="ml-4 flex flex-col">
+                  <span className="text-5xl font-bold ml-20">Linkedin</span>
+                  <span className="mt-10 text-[22px] text-white underline ml-20">
+                  Confira nosso post sobre <br/>
+                  a Fast Product Discovery
+                  </span>
+                </div>
+                <a
+                  href="https://www.linkedin.com/company/dbc-company/mycompany/"                  
+                  target="_blank"
+                  className="ml-auto"
+                >
+                  <Image src="/open.png" width={32} height={32} alt="Open" />
+                </a>
+              </div>
+            </CardMaterials>
           </div>
           <div className="flex-grow-[0.4]">
-            <CardMaterials variant="blueDark">Figma commubuty</CardMaterials>
+          <CardMaterials variant="blueDark">
+              <div className="flex w-full items-start p-16">
+                <Image src="/figma.png" width={58} height={58} alt="DBC" />
+                <div className="ml-4 flex flex-col">
+                  <span className="text-5xl font-bold ml-20">Figma</span>
+                  <span className="mt-12 text-[22px] text-white underline ml-20">
+                  Descubra nossa <br/>comunidade e <br/>recursos no Figma.
+                  </span>
+                </div>
+                <a
+                  href="https://www.linkedin.com/company/dbc-company/mycompany/"                  
+                  target="_blank"
+                  className="ml-auto"
+                >
+                  <Image src="/open.png" width={32} height={32} alt="Open" />
+                </a>
+              </div>
+            </CardMaterials>
           </div>
         </div>
 
