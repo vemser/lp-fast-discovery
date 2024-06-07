@@ -27,7 +27,7 @@ const config: Config = {
       },
       boxShadow: {
         "card-shadow": "1px 1px 8px 0px rgba(0, 0, 0, 0.16);",
-        "email-btn-shadow": "0px 4px 8px 3px rgba(0, 0, 0, 0.20);"
+        "email-btn-shadow": "0px 4px 8px 3px rgba(0, 0, 0, 0.20);",
       },
       fontFamily: {
         inter: ["Inter", "sansoserif"],
@@ -61,6 +61,9 @@ const config: Config = {
         "cards-galery-lg": "repeat(3, minmax(327px, 409px))",
         "cards-galery-md": "repeat(2, minmax(327px, 409px))",
         "cards-galery-sm": "repeat(1, minmax(327px, 409px))",
+      },
+      screens: {
+        "4k": "2560px",
       },
     },
   },
