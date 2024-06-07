@@ -12,7 +12,7 @@ import personAndWhiteboardImg from "../../atoms/assets/imgs/person-and-whiteboar
 export default function MaterialGrid() {
   return (
     <>
-      <div className="hidden  max-h-[100dvh] 2xl:max-w-[85%] 4k:max-w-[90%] m-auto w-full gap-8 md:grid-cols-1 lg:grid lg:grid-cols-3">
+      <div className="hidden  min-h-[100dvh] 2xl:max-w-[85%] 4k:max-w-[100%] m-auto w-full gap-8 md:grid-cols-1 lg:grid lg:grid-cols-3 overflow-hidden">
         <div className="hidden flex-1 flex-col gap-8 lg:flex">
           <div className="flex max-w-[300px] flex-col gap-6 2xl:max-w-[400px]">
             <h2 className="font-medium lg:text-4xl xl:text-5xl">

@@ -4,7 +4,7 @@ export function FaqSection() {
   return (
     <section className="flex min-h-[80dvh] bg-blue-bg lg:px-28" id='faq'>
       <div
-        className="flex flex-col justify-between gap-20 my-[15%] h-[100%] w-full px-6 lg:px-0
+        className="flex flex-col justify-between gap-20 my-[15%] h-[100%] w-full 4k:max-w-[80%] 4k:mx-auto  px-6 lg:px-0
         lg:flex-row
       "
       >
