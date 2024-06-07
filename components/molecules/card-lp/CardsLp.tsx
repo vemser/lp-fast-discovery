@@ -14,7 +14,7 @@ export default function CardsLp({ icon, alt, title, children }: CardLpProps) {
       <div className="ml-4">
     <Image src={icon} alt={alt} width={48} height={48} className="mb-2 pt-6" />
     <h2 className="text-lg font-semibold mb-2 py-16 pb-0">{title}</h2> 
-    <p className="text-gray-dark">{children}</p>
+    <p className="text-gray-dark mb-4">{children}</p>
     </div>    
   </div>
   );

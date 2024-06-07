@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function MaterialGrid() {
   return (
-    <div className="m-auto flex min-h-[100dvh] max-w-[90%] py-36">
+    <div className="flex w-full flex-col  items-start gap-4 px-6 py-12 lg:px-28 lg:py-36">
       <div className="grid min-h-full w-full gap-8 md:grid-cols-1 lg:grid-cols-3">
         <div className="hidden min-h-full flex-1 flex-col gap-8 lg:flex">
           <div className="flex-grow-[0.4]">

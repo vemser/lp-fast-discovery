@@ -151,7 +151,6 @@ export function AgileJourneySection() {
                   className="text-2xl lg:text-5xl"
                   alt="ícone de uma folha de papel com um relógio no seu canto inferior direito"
                 />
-                <div className="hidden h-[100px] w-[1px] border border-dashed border-white lg:block"></div>
               </div>
               <h3 className="text-xl font-medium text-white md:text-5xl lg:font-light">
                 Refinamento

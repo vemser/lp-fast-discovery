@@ -27,6 +27,7 @@ const config: Config = {
       },
       boxShadow: {
         "card-shadow": "1px 1px 8px 0px rgba(0, 0, 0, 0.16);",
+        "email-btn-shadow": "0px 4px 8px 3px rgba(0, 0, 0, 0.20);"
       },
       fontFamily: {
         inter: ["Inter", "sansoserif"],
