@@ -2,13 +2,13 @@ import { DetailsAccordion } from '../details-accordion/DetailsAccordion';
 
 export function FaqSection() {
   return (
-    <section className="flex min-h-[80dvh] bg-blue-bg" id='faq'>
+    <section className="flex min-h-[80dvh] bg-blue-bg lg:px-28" id='faq'>
       <div
-        className="flex flex-col justify-center gap-20 my-[15%] h-[100%] w-full px-6
+        className="flex flex-col justify-between gap-20 my-[15%] h-[100%] w-full 4k:max-w-[80%] 4k:mx-auto  px-6 lg:px-0
         lg:flex-row
       "
       >
-        <div className="flex flex-col gap-6  justify-start max-w-[500px] mb-14 sm:items-center sm:max-w-full sm:text-center
+        <div className="flex flex-col gap-6  justify-start max-w-[500px] sm:items-center sm:max-w-full sm:text-center
           lg:items-start lg:text-left
         ">
           <span className="text-xs text-brand-darker">FAQ</span>

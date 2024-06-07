@@ -19,7 +19,7 @@ export function BenefitsSection() {
           </h2>
         </div>
 
-        <div className="grid-cols-cards-galery-sm lg:grid-cols-cards-galery-lg md:grid-cols-cards-galery-md grid w-full justify-items-center justify-center gap-8 md:gap-3 xl:gap-8">
+        <div className="grid-cols-cards-galery-sm xl:grid-cols-cards-galery-lg md:grid-cols-cards-galery-md grid w-full justify-items-center justify-center gap-8 md:gap-3 xl:gap-8">
           <CardsLp
             title="Interatividade Elevada"
             alt="ícone de três pessoas próximas uma das outras"

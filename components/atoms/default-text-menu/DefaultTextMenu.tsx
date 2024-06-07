@@ -15,14 +15,7 @@ export default function DefaultTextMenu({
     <>
       <Link href={href}>
         <div
-          className="
-      inline-block
-      text-white text-lg font-medium px-1.5 py-1
-      hover:outline hover:outline-white hover:outline-rounded-2xl
-      active:text-gray-300  hover:rounded-2xl
-      disabled:text-gray-400 disabled:cursor-not-allowed      
-      transition-all duration-300
-      "
+          className="rounded-2xl inline-block px-3 py-1 text-lg font-medium text-white hover:outline hover:outline-1 hover:outline-white active:text-gray-300 disabled:cursor-not-allowed disabled:text-gray-400"
           {...rest}
         >
           {children}

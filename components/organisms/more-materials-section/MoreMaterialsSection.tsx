@@ -1,21 +1,9 @@
-
-import DefaultTitle from "@/components/atoms/default-title/DefaultTitle";
 import MaterialGrid from "@/components/molecules/card-materials/MaterialGrid";
-import styles from './card-style.module.css';
 
 export default function MoreMaterialsSection() {
   return (
-    <>
-    <div className={styles.container}>     
-      
-      
+    <section className="px-6 py-12 lg:px-28 lg:py-36 flex flex-1  min-h-[100dvh] bg-brand-darker text-white">     
       <MaterialGrid/>
-      
-      
-    
-    </div>
-
-    
-    </>
+    </section>
   );
 }

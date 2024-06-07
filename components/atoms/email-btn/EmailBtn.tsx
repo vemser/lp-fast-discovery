@@ -51,7 +51,7 @@ export function EmailBtn({ className, ...rest }: EmailBtnProps) {
   return (
     <button
       className={cn(
-        "flex h-[50px] w-[50px] items-center justify-center rounded-full bg-brand-main text-white transition-all duration-300 hover:bg-brand-dark focus:outline-2 focus:outline-brand-dark active:bg-brand-darker disabled:cursor-not-allowed disabled:bg-gray-dark md:h-[80px] md:w-[80px]",
+        "shadow-email-btn-shadow flex h-[50px] w-[50px] items-center justify-center rounded-full bg-brand-main text-white transition-all duration-300 hover:bg-brand-dark focus:outline-2 focus:outline-brand-dark active:bg-brand-darker disabled:cursor-not-allowed disabled:bg-gray-dark md:h-[80px] md:w-[80px] ",
         className,
       )}
       onClick={handleCopyEmail}
