@@ -7,6 +7,7 @@ import Head from "next/head";
 import Header from "@/components/organisms/header/Header";
 import Footer from "@/components/organisms/footer/Footer";
 
+
 const inter = Inter({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
@@ -34,7 +35,8 @@ export default function Home() {
           type="image/png"
           sizes="16x16"
           href="/favicon-32x32.png"
-        />
+        />    
+        
         <meta
           name="description"
           content="Fast Product Discovery: A ferramenta mais rápida e eficaz para validar seu produto digital no formato presencial ou remoto."
@@ -51,7 +53,7 @@ export default function Home() {
         <link rel="canonical" href={process.env.NEXT_PUBLIC_SITE_URL} />
       </Head>
       <ToastContainer />
-      <section className={`${inter.className} flex flex-col`}>
+      <section className={`${inter.className} flex flex-col`}>      
         <EmailBtn className="fixed bottom-4 right-6 z-10 md:bottom-14 md:right-14" />
         <Header />
         <BigHeroSection />
